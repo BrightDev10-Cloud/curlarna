@@ -1,0 +1,1163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+.hero_section{
+    height: 100vh;
+    width: 100%;
+    background: url(assets/Branding/Hero_img.png) no-repeat center/cover;  
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.nav_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+}
+.top_nav{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    height: 60px;
+    align-items: center;
+    border-radius: 6.25rem;
+    background: #022c2275;
+    backdrop-filter: blur(61.349998474121094px);
+    position: fixed;
+    top: 20;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    border: .2px solid rgba(245, 245, 245, 0.086);
+    z-index: 999;
+    
+    
+}
+.top_nav nav ul {
+    display: flex; /* Make children (li) align horizontally */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    align-items: center; /* Vertically align items in the center */
+    gap: 30px; /* Space between the links */
+}
+
+/* No specific styling needed for li, as flex on ul handles layout */
+.top_nav nav ul li {
+    flex-shrink: 0; 
+}
+
+/* Style the anchor tags within the nav list items */
+.top_nav nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    padding: 10px 15px; /* Add padding for better click area, adjust as needed */
+    display: block; /* Make the link a block to apply padding properly */
+    font-family: "Figtree", sans-serif;
+    font-weight: 400; /* Adjust font-weight as needed */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.top_nav nav ul li a:hover {
+    color: #9BFB5B; /* Example hover effect for links */
+}
+
+
+/* Ensure the button within the nav link maintains its styles */
+.main_btn {
+    border-radius: 12.5rem;
+    border: 1px solid #FFF;
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    /* Ensure no default margin/padding from anchor tag affects it */
+    margin: 0;
+    display: inline-flex; /* Use inline-flex for button content alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+/* .main_nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+
+}
+.links{
+    list-style: none;
+    text-decoration: none;
+} */
+/* nav li a{
+
+    list-style-type: none;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Figtree", sans-serif;
+    
+   
+} */
+.mobile_menu{
+    display: none;
+    
+}
+.main_btn{
+    border-radius: 12.5rem;
+    border: 1px solid #FFF;
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.secondary_btn{
+    border-radius: 12.5rem;
+    border: none;
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: #9BFB5B;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.waitlist_btn{
+    border-radius: 12.5rem;
+    border: none;
+    height: 56px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: #9BFB5B;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.accent_btn{
+    border-radius: 12.5rem;
+    border: none;
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: #022C22;
+    color: white;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.outline_btn{
+    border-radius: 12.5rem;
+    border: 1px solid#022c22;
+    height: 40px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color:transparent;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.hero_content{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 200px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.hero_content h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+}
+.hero_content p{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 50
+  
+}
+.mobile_nav{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #022c228a;
+    backdrop-filter: blur(61.349998474121094px);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    z-index: 99;
+    font-family: "Figtree", sans-serif;
+
+}
+.mobile_nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    align-items: center;
+    list-style: none;
+}
+.mobile_nav ul li a{
+    text-decoration: none;
+}
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social_proof{
+    width: 100%;
+    height: 224px;
+    background-color: #022C22;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    color: white;
+   
+}
+.social_proof h4{
+     font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+.sponsor_logos img{
+    padding-right: 30px;
+}
+.how_it_works{
+    width: 100%;
+    height: 888px;
+}
+.header{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: .2px solid #022c222e;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px ;
+    padding-bottom: 30px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+.header_2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: .2px solid #022c222e;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: #022C22;
+    border-radius: 1000px;
+}
+.dot_2{
+    height: 10px;
+    width: 10px;
+    background-color: #9BFB5B;
+    border-radius: 1000px;
+}
+.step{
+    width: 488px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.step h3{
+    font-size: 48px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+.step p{
+    font-size: 18px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.steps_img{
+    width: 488px;
+    height: 680px;
+    background: url(assets/Branding/Steps_img.png) no-repeat center/cover;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.mission{
+    width: 100vw;
+    height:692px ;
+
+}
+.mission_container{
+    width: 80%;
+    height: 660px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #FFF7ED;
+    border-radius: 20px;
+}
+.main_container_2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Figtree", sans-serif;
+
+}
+.mission_container h2{
+    font-size: 62px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.faded_text{
+    font-size: 18px;
+    color: #022c22a1;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.about_us{
+    width: 100%;
+    height: 80vh;
+    background: url(assets/Branding/About_img.png) no-repeat center/cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Figtree", sans-serif;
+}
+.about_content{
+    width: 50%;
+}
+.about_us h2{
+    font-size: 62px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.about_us p{
+    font-size: 24px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+.team_section{
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    text-align: center;
+    font-family: "Figtree", sans-serif;
+    padding-top: 50px;
+    align-items: center;
+}
+.team_header{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+.team_header h2{
+    font-size: 62px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+    
+}
+.team_profiles_wrapper{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.team_profiles_wrapper img{
+    margin-bottom: 30px;
+}
+.center{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-family: "Figtree", sans-serif;
+}
+.team_member h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.team_member p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #022c2281;
+}
+.mission_statement{
+    width: 100%;
+    height: 60vh;
+    background: url(assets/Branding/mission_statement.png)no-repeat center/cover;
+    padding-top: 50px;
+    font-family: "Figtree", sans-serif;
+}
+.mission_statement h3{
+    font-size: 76px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.statement_wrapper{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* faq_section */
+.faq-section {
+  width: 100%;
+  margin: 20px auto;
+  font-family: "Figtree", sans-serif;
+  font-weight: 100;
+}
+.faq-section h3 {
+    font-size: 18px;
+    font-family: "Figtree", sans-serif;
+    font-weight: medium;
+    color: #022C22;
+}
+.faq_content h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflowing content initially */
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.faqs{
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+}
+.faq_container{
+    width: 95%;
+    height: auto;
+    background-color: #FFF7ED;
+    border-radius: 24px;
+    padding-bottom: 250px;
+}
+
+.faq_content{
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.faq_questions{
+    /* background-color: #9BFB5B; */
+    width: 50%;
+    height: 100vh;
+}
+.faq_title_container{
+    width: 40%;  
+}
+.faq_title_container h3{
+    font-size: 62px;
+    font-weight: 200;
+    
+}
+.faq_title {
+    font-size: 62px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    
+}
+
+/* .faq-question:hover {
+  background-color: #22c22;
+} */
+
+.toggle-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  padding: 0 15px; /* Initial padding, height will be controlled by JS */
+  max-height: 0; /* Hidden by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition for height and padding */
+}
+
+.faq-answer p {
+  margin-bottom: 15px; /* Add some bottom margin to the paragraph */
+  font-family: "Figtree", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color:#022c22a8
+
+}
+
+/* Class to apply when the FAQ item is open */
+.faq-item.active .faq-answer {
+  max-height: 200px; /* Adjust as needed, make sure it's larger than the content */
+  padding: 15px;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg); /* Rotate the plus icon to an X */
+}
+/*Blog section*/
+.blog_section{
+    width: 80%;
+    height: 100vh;
+    background-color: #fdfdfd;
+    padding-top: 100px;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.blog_title{
+    width: 30%;
+    height: auto;
+    /* background-color: #9BFB5B; */
+}
+.blog_articles{
+    width: 60%;
+    height: auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.blog_title h2{
+    font-size: 62px;
+    font-weight: 200;
+    font-family: "Figtree", sans-serif;
+    color: #022C22;
+    margin-bottom: 20px;
+}
+.blog_title p{
+    font-size: 18px;
+    font-weight: 200;
+    font-family: "Figtree", sans-serif;
+    color: #022C22;
+}
+.blog_header{
+    margin-bottom: 50px;
+}
+.article_blob{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    margin-bottom: 32px;
+    
+}
+
+
+
+.article_details h3{
+    font-size: 24px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.article_details p{
+    font-size: 18px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+}
+.author_info {
+    display: flex;
+    flex: row;
+    align-items: center;
+    gap: 20px;
+    flex-direction: start;
+}
+.small_dot{
+    width: 4px;
+    height: 4px;
+    background-color: #022c2266;
+    border-radius: 1000px;
+}
+/*Waitlist section*/
+.join_waitlist_section{
+    width: 100%;
+    height: auto;
+    background: url(assets/Branding/Join_waitlist_bg.png) no-repeat right/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input_area{
+    width: 50%;
+    height: auto;
+}
+.input_area h3{
+    font-size: 42px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+}
+.input_area p{
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.507);
+}
+.waitlist_container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.input_field input{
+    width: 390px;
+    height: 56px;
+    background-color: white;
+    border: none;
+    border-radius: 200px;
+    padding: 10px 20px;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/*Footer Section*/
+footer {
+  background: url(assets/Branding/Footer_bg.png) no-repeat center/cover;
+  color: white;
+  padding: 30px 0;
+  height: auto;
+  padding-top: 150px;
+}
+
+.footer-container {
+  padding-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Figtree", sans-serif;
+ 
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Figtree", sans-serif;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  font-family: "Figtree", sans-serif;
+  
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  font-family: "Figtree", sans-serif;
+  font-weight: 100;
+  color: #fbfbfb61;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: .2px solid #ffffff39;
+  font-family: "Figtree", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+
+/* --- GSAP Animation Preparation Styles --- */
+/* Add initial states for elements that will animate on scroll */
+/* These make elements invisible and slightly offset before animation */
+.gsap-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.gsap-slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.gsap-slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+/* Ensure images scale correctly */
+/* img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below image} */
+
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero_section{
+        height: 100vh;
+        padding-top: 20px;
+    }
+    .top_nav{
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .mobile_nav{
+        z-index: 2000;
+    }
+    .mobile_nav ul li a{
+        color: white;
+    }
+    .mobile_menu{
+    display: inline-block;
+    }
+    nav ul{
+        display: none;
+    }
+    .hero_content{
+        width: 80%;
+        padding-top: 100px;
+    }
+    nav ul li a{
+        flex-direction: column;
+        gap: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    .hero_content h1{
+        font-size: 4rem;
+    }
+    .container{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+    .social_proof{
+    width: 100%;
+    height: 200px;
+    background-color: #022C22;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;
+   
+}
+.how_it_works{
+    margin-bottom: 30px;
+    height: auto;
+}
+.step{
+    width: 288px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.step h3{
+    font-size: 28px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+}
+.step p{
+    font-size: 14px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.steps_img{
+    width: 415px;
+    height: 380px;
+    background: url(assets/Branding/Steps_img.png) no-repeat center/cover;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.mission{
+    width: 100vw;
+    height:auto ;
+
+}
+.mission_container{
+    width: 80%;
+    height: 560px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #FFF7ED;
+    border-radius: 20px;
+}
+.main_container_2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Figtree", sans-serif;
+
+}
+.mission_container h2{
+    font-size: 32px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+}
+.faded_text{
+    font-size: 14px;
+    color: #022c2275;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+} 
+.about_content{
+    width: 80%;
+}
+.about_us h2{
+    font-size: 42px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.about_us p{
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 30px;
+} 
+.team_section{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.team_header{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+.team_header h2{
+    font-size: 42px;
+    color: #022C22;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-top: 20px;
+    
+}
+.team_profiles_wrapper{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.mission_statement h3{
+    font-size: 46px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.statement_wrapper{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.faq_content{
+   
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.faq_questions{
+    
+    width: 100%;
+    height: 100vh;
+}
+.faq_title{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.faq_content h3{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.faq_container{
+    width: 95%;
+    height: 190vh;
+    background-color: #FFF7ED;
+    border-radius: 24px;
+}
+.faq_title_container h3{
+    font-size: 32px;
+    
+}
+.faq_title_container{
+    width: 100%;
+}
+.blog_section{
+    width: 80%;
+    height: auto;
+    background-color: #fdfdfd;
+    padding-top: 100px;
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.blog_title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.blog_articles{
+    width: auto;
+    height: auto;
+    /* padding: 0 30px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    flex-direction: start;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+.blog_title h2{
+    font-size: 42px;
+    font-weight: 200;
+    font-family: "Figtree", sans-serif;
+    color: #022C22;
+    margin-bottom: 20px;
+}
+.blog_title p{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Figtree", sans-serif;
+    color: #022C22;
+}
+.article_img img{
+    width: 120px;
+    height: 120px;
+}
+.article_details h3{
+    font-size: 18px;
+}
+.article_details p{
+    font-size: 12px;
+
+}
+.article_blob{
+    display: flex;
+    align-items: left;
+    gap: 30px;
+    height: auto;
+    margin-bottom: 32px;
+    /* background-color: blue; */
+    width: 100%;
+    
+}
+.author_info{
+    gap: 5px;
+}
+.author_info img{
+    height: 20px;
+    width: 20px;
+}
+
+
+.join_waitlist_section{
+    padding-top: 40px;
+    width: 100%;
+    height: auto;
+    background: url(assets/Branding/Join_waitlist_bg.png) no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_area{
+    width: 100%;
+    height: auto;
+}
+.input_area h3{
+    font-size: 42px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.input_field{
+    display: flex;
+}
+.input_area p{
+    font-size: 14px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: white;
+}
+.waitlist_container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.input_field input{
+    width: 300px;
+    height: 46px;
+    background-color: white;
+    border: none;
+    border-radius: 200px;
+    padding: 10px 20px;
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+.waitlist_btn{
+    border-radius: 12.5rem;
+    border: none;
+    height: 46px;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    background-color: #9BFB5B;
+    font-family: "Figtree", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+    .top_nav nav ul {
+        display: none; /* Hide default nav on mobile */
+    }
+    .mobile_menu {
+        display: inline-block; /* Show mobile menu icon */
+    }
+    /* You already have the mobile_nav styling to make it display flex column when open */
+}
+
+
+/* Media Query for smaller screens for footer*/
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}

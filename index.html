@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curlana landing page</title>
+    <link rel="StyleSheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body>
+   <div class="nav_container">
+     <div class="top_nav">
+        <div class="logo">
+           <a href="#"><img src="assets/Branding/curlana_logo_v2.png" alt="Curlana Logo" height="25px"></a> 
+        </div>
+        <nav class="main_nav">
+            <ul>
+                <li><a  class="links"   href="/founder_bio.html">Founder's Bio</a></li>
+                <li>
+                    <a   class="links"    href="#waitlist_section"><button class="main_btn">Join Waitlist</button></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile_menu" onclick="openMobileMenu()">
+            <img src="assets/Branding/Mobile_menu.png" alt="mobile_menu" height="35px" class="mobile_menu_icon">
+        </div>
+    </div>
+   </div>
+    <section class="hero_section">
+     
+        <div class="hero_content">
+            <img src="assets/Branding/Powering_the_future.png" alt="" height="20px">
+            <h1>The Future of Waste management</h1>
+            <p>Our commitment to sustainable waste management is paving the way for a cleaner, healthier planet. <br> Join us on a journey towards a cleaner, greener world - starting with your homes and businesses..</p>
+            <a href="#waitlist_section"><button class="secondary_btn">Join Waitlist</button></a>
+        </div>
+        <div class="mobile_nav">
+           
+           <div class="flex_container">
+             <ul>
+                    <li><a href="/founder_bio.html">Founder's Bio</a></li>
+                    <li>
+                        <a href="#waitlist_section"><button class="main_btn">Join Waitlist</button></a>
+                    </li>
+            </ul>
+           </div>
+             <div class="close_menu_btn" onclick="closeMobileMenu()">
+                <img src="assets/Branding/close_icon.png" alt="close_btn" height="20px">
+            </div>
+        </div>
+    </section>
+    <!-- <section class="social_proof">
+        <div class="container">
+            <div>
+            <h4>Our Partners & Supporters</h4>
+        </div>
+        <div class="sponsor_logos">
+            <img src="assets/Branding/Logo-1.png" alt="Sponsor Logo 1" height="30px">
+            <img src="assets/Branding/Logo-2.png" alt="Sponsor Logo 2" height="30px">
+            <img src="assets/Branding/Logo-3.png" alt="Sponsor Logo 3" height="30px">
+            <img src="assets/Branding/Logo.png" alt="Sponsor Logo 4" height="30px">
+            
+        </div>
+        </div>
+    </section> -->
+    <section class="how_it_works" id="how_it_works_section">
+        <div class="main_container">
+            <div class="header">
+                <div class="dot"></div>
+                <p>How it works</p>
+            </div>
+            <div class="container">
+                <div class="steps">
+                    <div class="step">
+                        <h3>Sort & Snap</h3>
+                        <img src="assets/Branding/Progress Bar.png" alt="progress_bar" width="100%">
+                        <p>Separate plastics, paper, bottles, and other recyclables at home or work. Snap a photo and upload via our app.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Schedule Pickup</h3>
+                        <img src="assets/Branding/Progress Bar.png" alt="progress_bar" width="100%">
+                        <p>We’ll optimise a pickup route and collect your recyclables from your doorstep—on your time.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Earn & Redeem</h3>
+                        <img src="assets/Branding/Progress Bar.png" alt="progress_bar" width="100%">
+                        <p>Get digital tokens for every pickup. Redeem tokens for cash, airtime, groceries, or eco-friendly products.</p>
+                    </div>
+                </div>
+                <div class="steps_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mission" id="mission_section">
+        <div class="mission_container">
+            <div class="main_container_2">
+                <div class="header_2">
+                <div class="dot_2"></div>
+                <p>Our Mission</p>
+            </div>
+                <h2>we're commited to a sustainable future</h2>
+                <p class="faded_text">Join us at the forefront of Nigeria's sustainable waste management  movement as  We actively reshape the future of waste management.</p>
+                <p class="faded_text">Our commitment is simple: <br><br>
+                    . Eliminate landfill waste and conquer pollution with intelligent solutions.<br><br>
+                    . Leverage powerful AI to sort waste smarter, ensuring maximum recovery.<br><br>
+                    . Drive Nigeria's circular economy, turning waste into wealth and resources.<br><br>
+                    . Compensate you for your positive environmental actions.<br><br>
+                    . Ignite change in every community, one material, one sustainable step at a time.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about_us" id="about_section">
+        <div class="about_content">
+            <h2>About us</h2>
+            <p>At Curlarna, we're committed to a sustainable future. As a pioneering force in the sustainable waste management sector, we’re  at the forefront of the transition to clean, sustainable waste management. Our mission is simple yet profound: to create a world where waste becomes a resource for development.  We believe that by harnessing the power of waste, we can power the world and protect it simultaneously.</p>
+            <button class="secondary_btn">Learn more</button>
+        </div>
+    </section>
+    <section class="team_section">
+        <div class="center">
+            <div class="team_header">
+            <h2>Meet our team of experts</h2>
+            <p class="faded_text">Our team boasts of top tech and green energy experts, driving innovation in suatsinability technologies</p>
+        </div>
+        <div class="team_profiles_wrapper">
+            <div class="team_member">
+                <img src="assets/Branding/Team_1.png" alt="Azeez" height="152px">
+                <div class="team_member_details">
+                    <h3>Abdulazeez Abu</h3>
+                    <p>Founder & CEO</p>
+                </div>
+            </div>
+             <div class="team_member">
+                <img src="assets/Branding/Team_2.png" alt="Mariam" height="152px">
+                <div class="team_member_details">
+                    <h3>Mariam Lawal</h3>
+                    <p>Senior Sustainability Expert & COO</p>
+                </div>
+            </div>
+             <div class="team_member">
+                <img src="assets/Branding/Team_3.png" alt="Terry" height="152px">
+                <div class="team_member_details">
+                    <h3>Terry Ogenz</h3>
+                    <p>Head of Sales/Marketing</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="mission_statement">
+        <div class="statement_wrapper">
+            <h3>
+                Our commitment to sustainable waste management is paving the way for a cleaner, healthier planet. 
+            </h3>
+            <button class="accent_btn">Get in touch</button>
+        </div>
+    </section>
+    <section class="faqs" id="faqs_section">
+        <div class="faq_container">
+            <div class="faq_header">
+                <div class="main_container_2">
+                <div class="header_2">
+                <div class="dot_2"></div>
+                <p>FAQs</p>
+            </div>
+            </div>
+            <div class="faq_content">
+                <div class="faq_title_container">
+                    <h3 class = "faq_title">Answers to the some frequently asked questions.</h3>
+                    <button class="outline_btn">Contact us</button>
+                </div>
+                <div class="faq_questions">
+                    <div class="faq-section">
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>How does this work?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            We make it easy to sort and recycle your waste. You separate recyclable materials like plastics, paper, cans, and bottles. Then, you upload a photo of your sorted items via our app or website. We schedule a pickup, collect your recyclables, and reward you with tokens you can redeem for cash or products.
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>Is this service available in my area?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            We're starting in select neighborhoods and cities in Nigeria. Join our waitlist to get notified when we launch in your area. Early supporters may also get access to exclusive rewards!
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>What kind of waste do you collect?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            We currently accept the following recyclable waste:
+                            Plastic bottles and containers
+                            Paper and cardboard
+                            Aluminum cans
+                            Glass bottles
+                            Certain e-waste (on request)
+                            For now, we do not collect food waste, hazardous waste, or medical waste.
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>How do i use AI in the process?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            Great question! Our platform uses AI to:
+                            Identify and verify recyclables via image recognition,
+                            Optimize pickup routes to reduce emissions,
+                            Recommend the best reward offers for you.
+                            This helps us operate efficiently and make the experience smoother for you.
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>Who handles the recycling?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                           We partner with trusted local recyclers and upcyclers across Nigeria. As we grow, we plan to build our own recycling and upcycling facilities to create more jobs and scale impact. 
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>Is there a cost to join?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            No, joining our platform and getting your waste picked up is completely free. We make money by working with sustainability partners and recycling partners.
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>Can businesses use this service</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                           Absolutely! We work with restaurants, offices, hotels, and more. Businesses can also earn rewards and get sustainability credits. If you're a business interested in joining early, let us know when signing up.
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>What happens to waste after collection?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                         Your sorted waste is sent to our recycling or upcycling partners, who turn it into new products like packaging materials, furniture, or building components. Our goal is to return as much waste as possible into the economy
+                        </p>
+                        </div>
+                        </div>
+
+                        <div class="faq-item">
+                        <div class="faq-question">
+                        <h3>How do i join the waitlist?</h3>
+                        <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                        <p>
+                            Simply enter your email on the homepage and hit “Notify Me”. We'll email you when we're launching in your area and how to start earning rewards for your recyclables.
+                        </p>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog_section" id="blog_section">
+        <div class="blog_title">
+            <div class="blog_header">
+                <h2>Learn more from our blog</h2>
+                <p>Read some interesting articles about sustainable innovations in the world from seasoned sustainability experts.</p>
+            </div>
+            <button class="outline_btn">See all</button>
+        </div>
+        <div class="blog_articles">
+            <div class="article_blob">
+                <div class="article_img">
+                    <img src="assets/Branding/Blog_1.png" alt="" height="177px">
+                </div>
+                <div class="article_details">
+                    <h3>Wind Power: A breath of Fresh Air for Clean Energy Enthusiasts</h3>
+                    <div class="author_info">
+                        <div class="author_img">
+                            <img src="assets/Branding/Author_img_1.png" alt="" height="32px">
+                        </div>
+                        <p>Wade Warren</p> 
+                        <div class="small_dot"></div>
+                        <p>7 min read</p>
+                    </div>
+                </div>
+            </div>
+
+              <div class="article_blob">
+                <div class="article_img">
+                    <img src="assets/Branding/Blog_2.png" alt="" height="177px">
+                </div>
+                <div class="article_details">
+                    <h3>Wind Power: A breath of Fresh Air for Clean Energy Enthusiasts</h3>
+                    <div class="author_info">
+                        <div class="author_img">
+                            <img src="assets/Branding/Author_img_2.png" alt="" height="32px">
+                        </div>
+                        <p>Jenny Wilson</p> 
+                        <div class="small_dot"></div>
+                        <p>12 min read</p>
+                    </div>
+                </div>
+            </div>
+
+              <div class="article_blob">
+                <div class="article_img">
+                    <img src="assets/Branding/Blog_3.png" alt="" height="177px">
+                </div>
+                <div class="article_details">
+                    <h3>Wind Power: A breath of Fresh Air for Clean Energy Enthusiasts</h3>
+                    <div class="author_info">
+                        <div class="author_img">
+                            <img src="assets/Branding/Author_img_3.png" alt="" height="32px">
+                        </div>
+                        <p>WLeslie Alexander</p> 
+                        <div class="small_dot"></div>
+                        <p>5 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join_waitlist_section" id="waitlist_section">
+        <div class="waitlist_container">
+            <div class="input_area">
+                <h3>Join the Waitlist</h3>
+                <p>Stay in the loop, be the first to know when we launch.</p>
+                <div class="input_field">
+                    <div data-tf-live="01JXJDPM9W3G9H5DP0VXN7KVYJ"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                </div>
+            </div>
+            <div class="waitlist_img">
+                <img src="assets/Branding/Join_waitlist_img.png" alt="" height="440px">
+            </div>
+        </div>
+    </section>
+    <footer class="footer_section">
+        <div class="footer-container">
+            <div class="footer-section about-us">
+            <img src="assets/Branding/curlana_logo_v2.png" alt="logo" height="32px">
+            </div>
+            <div class="footer-section links">
+            <h3>Platform</h3>
+            <ul>
+                <li><a href="#">Solution</a></li>
+                <li><a href="#how_it_works_section">How it works</a></li>
+            </ul>
+            </div>
+             <div class="footer-section links">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#about_section">About</a></li>
+                <li><a href="#mission_section">Our Mission</a></li>
+            </ul>
+            </div>
+             <div class="footer-section links">
+            <h3>Resource</h3>
+            <ul>
+                <li><a href="#blog_section">Blog</a></li>
+                <li><a href="#faqs_section">FAQs</a></li>
+            </ul>
+            </div>
+            <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><img src="assets/Branding/X.png" alt="" height="42px"></a></li>
+                <li><a href="#"><img src="assets/Branding/Facebook.png" alt="" height="42px"></a></li>
+                <li><a href="#"><img src="assets/Branding/Instagram.png" alt="" height="42px"></a></li>
+                <li><a href="#"><img src="assets/Branding/LinkedIn.png" alt="" height="42px"></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p id="copyrightStatement">&copy; 2025 Curlarna. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
