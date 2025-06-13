@@ -1,55 +1,15 @@
 server {
-    listen 80; # Listen for incoming HTTP connections on port 80
-
-    # Specify your domain names. It's good practice to list both
-    # the bare domain and www subdomain.
-    server_name curlarna.xyz www.curlarna.xyz;
+    listen 80;
+    server_name curlarna.xyz www.curlarna.xyz; # ONLY your domain names here
 
     # The root directory for your website's files.
-    # Ensure this path is correct and accessible by the Nginx user.
-    root /var/www/curlarna/curlarna;
+    # Make sure this path is correct to your actual index.html
+    root /var/www/curlarna/curlarna; 
+    index index.html index.htm;
 
-    # The default file to serve when a directory is requested.
-    # index.html is standard for single-page applications or static sites.
-    index index.html index.htm; # Added index.htm as a fallback
-
-    # Main location block to handle requests
     location / {
-        # try_files attempts to serve files in the specified order.
-        # $uri: Tries to serve the exact requested URI (e.g., /about.html)
-        # $uri/: Tries to serve a directory (e.g., /blog/ would look for /blog/index.html)
-        # =404: If neither of the above are found, return a 404 Not Found error.
         try_files $uri $uri/ =404;
     }
 
-    # Optional: Add a server block for HTTPS (recommended for production)
-    # This redirects all HTTP traffic to HTTPS
-    # This requires an SSL certificate (e.g., from Let's Encrypt)
-    # If you're setting up HTTPS, you'd have a separate `listen 443 ssl;` block
-    # and SSL configuration. For now, we'll keep it simple for HTTP.
-
-    # Example for HTTPS (uncomment and configure with actual cert paths)
-    # listen 443 ssl;
-    # ssl_certificate /etc/letsencrypt/live/curlarna.xyz/fullchain.pem;
-    # ssl_certificate_key /etc/letsencrypt/live/curlarna.xyz/privkey.pem;
-    # ssl_protocols TLSv1.2 TLSv1.3;
-    # ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384';
-    # ssl_prefer_server_ciphers on;
-    # ssl_session_cache shared:SSL:10m;
-    # ssl_session_timeout 1d;
-    # ssl_session_tickets off;
-    # ssl_stapling on;
-    # ssl_stapling_verify on;
-    # resolver 8.8.8.8 8.8.4.4 valid=300s;
-    # resolver_timeout 5s;
-    # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
-    # add_header X-Frame-Options DENY;
-    # add_header X-Content-Type-Options nosniff;
+    # The commented-out HTTPS block and redirect should remain commented for now.
 }
-
-# Optional: HTTP to HTTPS Redirection (if you set up the HTTPS block above)
-# server {
-#     listen 80;
-#     server_name curlarna.xyz www.curlarna.xyz;
-#     return 301 https://$host$request_uri;
-# }
