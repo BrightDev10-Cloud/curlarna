@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(assets/Branding/Founder_Bio_bg.png) no-repeat center/cover;
+    background: url(/assets/Branding/Founder_Bio_bg.png) no-repeat center/cover;
 
 }
 .back_icon{
