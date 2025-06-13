@@ -7,7 +7,7 @@ server {
 
     # The root directory for your website's files.
     # Ensure this path is correct and accessible by the Nginx user.
-    root /var/www/curlarna/curlarna.xyz;
+    root /var/www/curlarna/curlarna;
 
     # The default file to serve when a directory is requested.
     # index.html is standard for single-page applications or static sites.
