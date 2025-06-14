@@ -233,14 +233,14 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
   - Set TTL to automatic
   - Save and exit. (Note that it takes some time for the DNS to resolve, in my case it took 0ver 60 Minutes after a gazillion hot refreshes on the browser 😂😂😂)
 
-## Phase 7 Browser renderings
+## Some Screenshots
 
 - Before SSL/TLS certificate
-  ![Alt text](/assets/Branding/without_SSL/TLS.png) 200/200 
+  ![Alt text](/assets/Branding/without_SSL/TLS.png)  
   
 
 - After SSL/TLS Certifcate
-   ![Alt text](/assets/Branding/with_SSL/TLS.png) 200/200 
+   ![Alt text](/assets/Branding/with_SSL/TLS.png) 
 
   
 
