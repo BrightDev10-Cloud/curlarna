@@ -871,7 +871,7 @@ footer {
 .steps_img{
     width: 415px;
     height: 380px;
-    background: url(assets/Branding/Steps_img.png) no-repeat center/cover;
+    background: url(/assets/Branding/Steps_img.png) no-repeat center/cover;
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 20px;
@@ -1079,7 +1079,7 @@ footer {
     padding-top: 40px;
     width: 100%;
     height: auto;
-    background: url(assets/Branding/Join_waitlist_bg.png) no-repeat center/cover;
+    background: url(/assets/Branding/Join_waitlist_bg.png) no-repeat center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1160,4 +1160,121 @@ footer {
   .footer-section {
     margin-bottom: 20px;
   }
+}
+/* responsiveness for smaller phone */
+
+@media only screen and (max-width: 600px) {
+    .hero_content h1{
+        font-size: 3rem;
+    }
+    .hero_content p{
+        font-size: 14px;
+    }
+    .top_nav{
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   
+
+    .mobile_nav ul li a{
+        font-size: 14px;
+    }
+    .hero_section{
+        height: 100vh;
+        padding-top: 20px;
+    }
+
+    .steps_img{
+    width: 100%;
+    width: auto;
+    
+    background: url(/assets/Branding/Steps_img.png) no-repeat center/cover;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+    .step{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+    }
+    .step h3{
+        font-size: 24px;
+        color: #022C22;
+        font-family: "Figtree", sans-serif;
+        font-weight: 100;
+    }
+    .step p{
+        font-size: 14px;
+        color: #022C22;
+        font-family: "Figtree", sans-serif;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+    .mission_container{
+        width: 90%;
+        height: 700px;
+    }
+    .mission_container h2{
+        font-size: 32px;
+    }
+    .faded_text{
+        font-size: 14px;
+    }
+    .about_content{
+        width: 90%;
+    }
+    .about_us h2{
+        font-size: 42px;
+    }
+    .waitlist_img img{
+        width: 100%;
+        height: auto;
+    }
+    .statement_wrapper h3{
+        font-size: 32px;
+    }
+    .faq_container{
+        align-items: left;
+        height: auto;
+        padding-bottom: 30px;
+        
+    }
+
+    .faq_questions {
+        height: auto;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .faq-section {
+        width: 100%;
+    }
+    .faq-section h3{
+        font-size: 18px;
+    }
+    .blog_articles{
+        display: flex;
+        justify-content: start;
+        
+    }
+    .article_blob{
+        
+        width: 300px;
+        gap: 15px;
+    }
+    .article_img img{
+        width: 90px;
+        height: 90px;
+    }
+    .article_details h3{
+        font-size: 14px;
+    }
+    .article_details p{
+        font-size: 10px;
+    }
+
+
 }
