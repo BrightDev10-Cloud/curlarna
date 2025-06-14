@@ -225,20 +225,22 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
     gzip_types text/css application/javascript application/json application/font-woff application/font-tff image/gif image/png image/jpeg        application/octet-stream;
 ```
 ## Phase 6 Connecting your public_IP address with custom domain-name (Namecheap example)
--Open the dashboard of your domain name vendor, in my case namecheap.
--Go to the Domain List >> Manage Domain >>Advanced DNS >> Host Records
--Edit the Type for both hosts (@ & www) to A Record
--Set the value for both hosts (@ & www) to the public_IPV4 from your Server in AWS
--Set TTL to automatic
--Save and exit. (Note that it takes some time for the DNS to resolve, in my case it took 0ver 60 Minutes after a gazillion hot refreshes on the browser 😂😂😂)
+
+  - Open the dashboard of your domain name vendor, in my case namecheap.
+  - Go to the Domain List >> Manage Domain >>Advanced DNS >> Host Records
+  - Edit the Type for both hosts (@ & www) to A Record
+  - Set the value for both hosts (@ & www) to the public_IPV4 from your Server in AWS
+  - Set TTL to automatic
+  - Save and exit. (Note that it takes some time for the DNS to resolve, in my case it took 0ver 60 Minutes after a gazillion hot refreshes on the browser 😂😂😂)
 
 ## Phase 7 Browser renderings
+
 - Before SSL/TLS certificate
-- <img width="1440" alt="image" src="https://github.com/user-attachments/assets/8ac1edb7-9646-4698-a285-09632563e799" />
+  ![Alt text](/assets/Branding/without_SSL/TLS.png) 200/200 
   
 
 - After SSL/TLS Certifcate
-- <img width="1440" alt="image" src="https://github.com/user-attachments/assets/7d9c5408-47dd-46b2-bfb2-caa5698bcd6a" />
+   ![Alt text](/assets/Branding/with_SSL/TLS.png) 200/200 
 
   
 
