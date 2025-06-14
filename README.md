@@ -13,32 +13,32 @@ This project demonstrates a complete DevOps workflow by deploying a dynamic star
 
 ##Technology Stack
 
--Cloud Provider: AWS EC2
+- Cloud Provider: AWS EC2
 
--Operating System: Ubuntu 22.04 LTS
+- Operating System: Ubuntu 22.04 LTS
 
--Web Server: Nginx
+- Web Server: Nginx
 
--Frontend: HTML5, CSS3, JavaScript, GSAP
+- Frontend: HTML5, CSS3, JavaScript, GSAP
 
--SSL/TLS: Let's Encrypt (Certbot)
+- SSL/TLS: Let's Encrypt (Certbot)
 
--Version Control: Git & GitHub
+- Version Control: Git & GitHub
 
 
 ##📝 Project Requirements Met
 
--✅ Server Provisioning: AWS EC2 Ubuntu instance
+- ✅ Server Provisioning: AWS EC2 Ubuntu instance
 
--✅ Web Server: Nginx configuration with virtual hosts
+- ✅ Web Server: Nginx configuration with virtual hosts
 
--✅ Dynamic Landing Page: Responsive design with some simple GSAP scroll animations
+- ✅ Dynamic Landing Page: Responsive design with some simple GSAP scroll animations
 
--✅ Security: SSL certificate and firewall configuration
+- ✅ Security: SSL certificate and firewall configuration
 
--✅ Documentation: Comprehensive README with deployment steps
+- ✅ Documentation: Comprehensive README with deployment steps
 
--✅ Bonus: Reverse proxy setup for Node.js applications
+- ✅ Bonus: Reverse proxy setup for Node.js applications
 
 
 
@@ -61,7 +61,7 @@ This project demonstrates a complete DevOps workflow by deploying a dynamic star
 - ```bash
   chmod 400 your-keypair.pem
   ```
--connect via SSH
+- connect via SSH
 ```bash
 ssh -i your-keypair.pem ubuntu@your-public-ip
 ```
@@ -78,16 +78,16 @@ sudo apt install -y curl wget git unzip
 
 ###2.1 Install Nginx and start Nginx server
 
--Install Nginx
+- Install Nginx
    ``` bash
   sudo apt install Nginx
   ```
--Start and Enable Nginx
+- Start and Enable Nginx
 ``` bash
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
--check status
+- check status
 ```bash
 sudo systemctl status nginx
 ```
@@ -99,17 +99,17 @@ sudo systemctl status nginx
   sudo ufw allow 'Nginx Full'
   sudo ufw enable
   ```
--verify firewall status
+- verify firewall status
 ``` bash
 sudo ufw status
 ```
 ###2.3 Setup Virtual Host
 
--create site configuration
+- create site configuration
 ``` bash
 sudo nano /etc/nginx/sites-available/curlarna | your-site
 ```
--content of the configuration file
+- content of the configuration file
 ``` bash
 server {
     listen 80;
@@ -126,11 +126,11 @@ server {
 
 }
 ```
--Enable the site
+- Enable the site
 ``` bash
     sudo ln -s /etc/nginx/sites-available/your-site /etc/nginx/sites-enabled/
 ```
--Test configuration and reload
+- Test configuration and reload
 ``` bash
     sudo nginx -t
     sudo systemctl reload nginx
@@ -142,17 +142,17 @@ server {
 ```bash
     sudo mkdir -p /var/www/curlarna | your-site
 ```
--Set Permissions to allow nginx access the web directory
+- Set Permissions to allow nginx access the web directory
 ```bash
     sudo chown -R www-data:www-data /var/www/curlarna | your-site
     sudo chmod -R 755 /var/www
 ```
 
--Initialize Git on your server
+- Initialize Git on your server
 ```bash
 sudo git init
 ```
--Copy the Files from GitHub to your server
+- Copy the Files from GitHub to your server
 ```bash
 sudo git clone <remote_repo_url>
 ```
@@ -162,7 +162,7 @@ sudo git clone <remote_repo_url>
   curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
   sudo apt-get install -y nodejs
   ```
--Configure Nginx Reverse Proxy
+- Configure Nginx Reverse Proxy
  ``` bash
     location / {
     proxy_pass http://localhost:3000;
@@ -176,11 +176,11 @@ sudo git clone <remote_repo_url>
 
 ##🛠️ Phase 4: SSL Certificate Setup
 
--Install Certbot
+- Install Certbot
  ``` bash
 sudo apt install certbot python3-certbot-nginx -y
 ```
--Generate SSL Certificate
+- Generate SSL Certificate
 ``` bash
    sudo certbot --nginx -d curlarna.xyz -d www.curlarna.xyz
    sudo certbot --nginx -d your-domain.com -d www.your-domain.com 
@@ -190,11 +190,11 @@ sudo apt install certbot python3-certbot-nginx -y
 sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 ```
 ### 4.1 Auto-renewal Setup
--Test renewal process
+- Test renewal process
 ``` bash
     sudo certbot renew --dry-run
 ```
--check renewal timer
+- check renewal timer
 ``` bash
     sudo systemctl status certbot.timer
 ```
@@ -203,11 +203,11 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 
 ### 5.1 Security Hardening
 
--Disable unnecessary services
+- Disable unnecessary services
 ``` bash
      sudo systemctl disable apache2 (if installed)
 ```
--Configure SSH security
+- Configure SSH security
 ``` bash
     sudo nano /etc/ssh/sshd_config
     # Set: PermitRootLogin no
@@ -217,7 +217,7 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 ```
 ### 5.2 Performance Optimization
 
--Configure Nginx for better performance
+- Configure Nginx for better performance
 
 ``` bash
     sudo nano /etc/nginx/nginx.conf
