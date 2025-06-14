@@ -2,14 +2,14 @@
 
 This project demonstrates a complete DevOps workflow by deploying a dynamic startup landing page to AWS EC2 using modern infrastructure practices.
 
-##Project Title: Curlarna (AI powered waste management)
-##Developer: Abdulazeez Bright Abu - Founder / Lead Engineer
-##Deployment: AWS EC2 Ubuntu Server with Nginx & SSL
+- Project Title: Curlarna (AI powered waste management)
+- Owner: Abdulazeez Bright Abu - Founder / Lead Engineer
+- Deployment: AWS EC2 Ubuntu Server with Nginx & SSL
 
 ##🚀 Live Demo
 
-🌐 Website URL: http://curlarna.xyz/
-📊 Project Status: ✅ Live and Running
+- 🌐 Website URL: http://curlarna.xyz/
+- 📊 Project Status: ✅ Live and Running
 
 ##Technology Stack
 
@@ -50,7 +50,7 @@ This project demonstrates a complete DevOps workflow by deploying a dynamic star
 - Login / Signup to AWS Account
 - Open EC2 dashboard on AWS console
 - Create new instance
-  - Instance type: t2.micro, ubuntu 22.4 LTS
+  - Instance type: t2.micro, ubuntu 22.40 LTS
   - Create and download a new key pair (Take note of the folder the .pem file was downloaded to) 
   - create security groups with these rules: Allow SSH traffic from Anywhere (0.0 0.0/0), Allow HTTPS traffic from the internet, Allow HTTP     traffic from the internet | Security Groups: HTTP (80), HTTPS (443), SSH (22).
 
@@ -157,7 +157,7 @@ sudo git init
 sudo git clone <remote_repo_url>
 ```
 ### 3.2 Bonus Node.js Reverse Proxy Setup
-- Install Node.js )If using reverse proxy)
+- Install Node.js (If using reverse proxy)
   ``` bash
   curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
   sudo apt-get install -y nodejs
@@ -200,7 +200,9 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 ```
 
 ##🛠️ Phase 5: Final configurations
+
 ### 5.1 Security Hardening
+
 -Disable unnecessary services
 ``` bash
      sudo systemctl disable apache2 (if installed)
@@ -214,7 +216,9 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
     sudo systemctl restart sshd
 ```
 ### 5.2 Performance Optimization
+
 -Configure Nginx for better performance
+
 ``` bash
     sudo nano /etc/nginx/nginx.conf
 # Adjust worker_processes, client_max_body_size, etc.
