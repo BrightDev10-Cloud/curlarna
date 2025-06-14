@@ -369,7 +369,7 @@
 .about_us{
     width: 100%;
     height: 80vh;
-    background: url(assets/Branding/About_img.png) no-repeat center/cover;
+    background: url(/assets/Branding/About_img.png) no-repeat center/cover;
     display: flex;
     text-align: center;
     align-items: center;
@@ -447,7 +447,7 @@
 .mission_statement{
     width: 100%;
     height: 60vh;
-    background: url(assets/Branding/mission_statement.png)no-repeat center/cover;
+    background: url(/assets/Branding/mission_statement.png)no-repeat center/cover;
     padding-top: 50px;
     font-family: "Figtree", sans-serif;
 }

@@ -4,7 +4,7 @@ server {
 
     # The root directory for your website's files.
     # Make sure this path is correct to your actual index.html
-    root /var/www/curlarna; 
+    root /var/www/curlarna/curlarna; 
     index index.html index.htm;
 
     location / {
