@@ -1,9 +1,10 @@
 #Project Overview
 
-This project demonstrates a complete DevOps workflow by deploying a dynamic startup landing page to AWS EC2 using modern infrastructure practices.
+This project demonstrates a complete DevOps workflow by developing and deploying a dynamic startup landing page to AWS EC2 using modern infrastructure practices.
 
 - Project Title: Curlarna (AI powered waste management)
-- Owner: Abdulazeez Bright Abu - Founder / Lead Engineer
+- Owner: Abdulazeez Bright Abu
+- Title: Founder / Lead Engineer
 - Deployment: AWS EC2 Ubuntu Server with Nginx & SSL
 
 ##🚀 Live Demo
@@ -232,8 +233,8 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 
   - Open the dashboard of your domain name vendor, in my case namecheap.
   - Go to the Domain List >> Manage Domain >>Advanced DNS >> Host Records
-  - Edit the Type for both hosts (@ & www) to A Record
-  - Set the value for both hosts (@ & www) to the public_IPV4 from your Server in AWS
+  - Edit the Type for both hosts (@ & www) to "A Record"
+  - Set the value for both hosts (@ & www) to the public_IPV4_address from your Server in AWS
   - Set TTL to automatic
   - Save and exit. (Note that it takes some time for the DNS to resolve, in my case it took 0ver 60 Minutes after a gazillion hot refreshes on the browser 😂😂😂)
 
