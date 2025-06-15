@@ -6,6 +6,7 @@ This project is my submission for AltSchool Africa Second Semester Exams. It dem
 - Owner: Abdulazeez Bright Abu
 - Title: Founder / Lead Engineer
 - Deployment: AWS EC2 Ubuntu Server with Nginx & SSL
+- Track : Cloud Engineering
 
 ##🚀 Live Demo
 
@@ -117,7 +118,7 @@ sudo ufw status
 - create site configuration
 
 ```bash
-sudo nano /etc/nginx/sites-available/curlarna | your-site
+sudo nano /etc/nginx/sites-available/curlarna
 ```
 
 - content of the configuration file
@@ -142,7 +143,7 @@ server {
 - Enable the site
 
 ```bash
-    sudo ln -s /etc/nginx/sites-available/your-site /etc/nginx/sites-enabled/
+    sudo ln -s /etc/nginx/sites-available/curlarna /etc/nginx/sites-enabled/
 ```
 
 - Test configuration and reload
@@ -159,13 +160,13 @@ server {
 - Create web directory
 
 ```bash
-    sudo mkdir -p /var/www/curlarna | your-site
+    sudo mkdir -p /var/www/curlarna
 ```
 
 - Set Permissions to allow nginx access the web directory
 
 ```bash
-    sudo chown -R www-data:www-data /var/www/curlarna | your-site
+    sudo chown -R www-data:www-data /var/www/curlarna
     sudo chmod -R 755 /var/www
 ```
 
@@ -200,6 +201,15 @@ sudo git clone <remote_repo_url>
    proxy_cache_bypass $http_upgrade;
 }
 ```
+
+- Reload Nginx Server and check the browser
+
+```bash
+  sudo systemctl reload nginx
+```
+
+- Open your open your browser and type the URl / domain name to find a render
+  - ![image](App_screenshot_without_SSL_TLS.png.png)
 
 ##🛠️ Phase 4: SSL Certificate Setup
 
