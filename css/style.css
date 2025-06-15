@@ -678,13 +678,27 @@
     color: white;
     margin-top: 40px;
 }
-.input_area p{
+.input_area_paragraph{
     font-size: 16px;
     font-family: "Figtree", sans-serif;
     font-weight: 200;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.507);
 }
+.input_area a{
+    text-decoration: underline;
+    color: #9BFB5B;
+    font-size: 18px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.mb_20{
+    margin-bottom: 20px;
+}
+/* .join_waitlist_link{
+    color: #9BFB5B;
+} */
 .waitlist_container{
     width: 80%;
     display: flex;
@@ -778,11 +792,34 @@ footer {
     opacity: 0;
     transform: translateX(50px);
 }
+
+
+/* Basic iframe styling */
+iframe {
+    width: 100%;
+    min-height: 500px; /* Adjust as needed */
+    border: none; /* Remove default border */
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+    iframe {
+        min-height: 400px; /* Adjust height for smaller screens */
+    }
+}
+
+/* For iPhone SE dimensions (375px wide) */
+@media (max-width: 375px) {
+    iframe {
+        min-height: 600px; /* Potentially taller for very small screens */
+    }
+}
 /* Ensure images scale correctly */
 /* img {
     max-width: 100%;
     height: auto;
     display: block; /* Removes extra space below image} */
+
 
 
 
