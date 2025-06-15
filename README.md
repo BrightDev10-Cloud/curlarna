@@ -208,7 +208,7 @@ sudo git clone <remote_repo_url>
   sudo systemctl reload nginx
 ```
 
-- Open your open your browser and type the URl / domain name to find a render
+- Open your browser and type the URl / domain name to find a render
   - ![image](App_screenshot_without_SSL_TLS.png.png)
 
 ##🛠️ Phase 4: SSL Certificate Setup
