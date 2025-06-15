@@ -284,8 +284,7 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 ## Some Screenshots
 
 - Before SSL/TLS certificate
-  
   ![App Screenshot 1](App_screenshot_without_SSL_TLS.png)
-- After SSL/TLS Certifcate
   
-  ![App Screenshot 1](App_screenshot_with_SSL_TLS.png)
+- After SSL/TLS Certifcate
+  ![App Screenshot 2](App_screenshot_with_SSL_TLS.png)
