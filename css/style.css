@@ -13,6 +13,11 @@
     text-align: center;
     justify-content: center;
 }
+.hero_content p{
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 100;
+}
 .nav_container{
     width: 100%;
     height: auto;
@@ -86,33 +91,12 @@
     font-family: "Figtree", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    /* Ensure no default margin/padding from anchor tag affects it */
     margin: 0;
     display: inline-flex; /* Use inline-flex for button content alignment */
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
 }
-/* .main_nav ul li a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
 
-}
-.links{
-    list-style: none;
-    text-decoration: none;
-} */
-/* nav li a{
-
-    list-style-type: none;
-    gap: 30px;
-    color: white;
-    align-items: center;
-    text-decoration: none;
-    font-family: "Figtree", sans-serif;
-    
-   
-} */
 .mobile_menu{
     display: none;
     
