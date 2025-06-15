@@ -1,6 +1,6 @@
 #Project Overview
 
-This project demonstrates a complete DevOps workflow by developing and deploying a dynamic startup landing page to AWS EC2 using modern infrastructure practices.
+This project is my submission for AltSchool Africa Second Semester Exams. It demonstrates a complete DevOps workflow by developing and deploying a dynamic startup landing page to AWS EC2 using modern infrastructure practices.
 
 - Project Title: Curlarna (AI powered waste management)
 - Owner: Abdulazeez Bright Abu
@@ -286,7 +286,9 @@ sudo certbot certonly --standalone --preferred-challenges http -d your-public-ip
 - Before SSL/TLS certificate
   
 ![without_SSL_TLS_cert](App_screenshot_without_SSL_TLS.png.png)
+![without_SSL_TLS_cert](https://github.com/user-attachments/assets/2593d4ba-ba17-4d28-b8f6-01f3b61e4756)
 
 - After SSL/TLS Certifcate
+![with_SSL_TLS_cert](https://github.com/user-attachments/assets/2b76f489-2a24-4ffb-8b4b-37f966676aaa)
 
 ![with_SSL_TLS_cert](App_screenshot_with_SSL_TLS.png)
